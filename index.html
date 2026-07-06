@@ -148,7 +148,7 @@
   .btn-ghost:hover{background:rgba(255,255,255,0.09);transform:translateY(-2px);}
 
   /* SECTION LABELS */
-  .section{padding:100px 0;}
+  .section{padding:80px 0;}
   .section-label{
     font-size:0.8rem;color:var(--text-faint);
     text-transform:uppercase;letter-spacing:0.1em;
@@ -162,7 +162,36 @@
     max-width:640px;
   }
 
-  /* ABOUT */
+  /* PORTFOLIO HEADER — bold, distinct */
+  .portfolio-header{
+    display:flex;justify-content:space-between;align-items:flex-end;
+    border-bottom:2px solid var(--glass-border);
+    padding-bottom:28px;margin-bottom:56px;
+    flex-wrap:wrap;gap:16px;
+  }
+  .portfolio-label{
+    font-family:'Space Grotesk',sans-serif;
+    font-size:clamp(2.2rem,5vw,3.2rem);
+    font-weight:700;letter-spacing:-0.02em;
+    display:flex;align-items:baseline;gap:16px;
+  }
+  .portfolio-label span{
+    color:var(--aqua);font-size:0.9rem;font-weight:600;
+    letter-spacing:0.15em;text-transform:uppercase;
+    background:rgba(110,231,216,0.1);
+    padding:6px 14px;border-radius:100px;
+    border:1px solid rgba(110,231,216,0.25);
+  }
+  .portfolio-sub{color:var(--text-dim);font-size:1rem;max-width:340px;text-align:right;}
+
+  /* card index numbers */
+  .card-num{
+    font-family:'Space Grotesk',sans-serif;
+    font-size:0.78rem;font-weight:700;color:var(--text-faint);
+    letter-spacing:0.05em;margin-bottom:18px;
+  }
+
+  
   .about-grid{
     display:grid;grid-template-columns:1.1fr 0.9fr;gap:60px;
     margin-top:48px;align-items:start;
@@ -196,13 +225,14 @@
   .card{
     background:var(--glass);
     border:1px solid var(--glass-border);
+    border-top:2px solid var(--aqua);
     backdrop-filter:blur(24px);
-    border-radius:22px;
-    padding:34px;
+    border-radius:14px;
+    padding:36px 32px;
     transition:transform 0.3s, border-color 0.3s;
     display:flex;flex-direction:column;
   }
-  .card:hover{transform:translateY(-4px);border-color:rgba(255,255,255,0.22);}
+  .card:hover{transform:translateY(-4px);border-color:rgba(255,255,255,0.22);border-top-color:var(--aqua);}
   .card-tag{
     font-size:0.75rem;color:var(--aqua);
     text-transform:uppercase;letter-spacing:0.08em;font-weight:600;
@@ -210,7 +240,7 @@
   }
   .card h3{
     font-family:'Space Grotesk',sans-serif;
-    font-size:1.4rem;font-weight:600;margin-bottom:12px;
+    font-size:1.7rem;font-weight:700;margin-bottom:14px;letter-spacing:-0.01em;
   }
   .card p.desc{
     color:var(--text-dim);font-size:0.95rem;line-height:1.6;margin-bottom:22px;flex-grow:1;
@@ -298,7 +328,7 @@
     <div class="about-grid">
       <div class="about-text">
         <p><strong>Anthony Tavarez</strong> is the owner and creator of Doxen Strategy, an AI-driven consulting practice built around a simple premise: most small businesses have the same handful of operational pain points, and most of those pain points now have an AI-shaped solution.</p>
-        <p>Since 2024, Anthony has researched, tested, and built with the current wave of AI tools — not as a hobby, but as a discipline. That work has produced real, deployed systems: intelligent call handling, referral and lead pipeline automation, lead generation platforms, and fast-turnaround websites built without the traditional dev-shop timeline or price tag.</p>
+        <p>Since Graduating from the University of Austin Texas in 2024, Anthony has researched, tested, and built with the current wave of AI tools — not as a hobby, but as a discipline. That work has produced real, deployed systems: intelligent call handling, referral and lead pipeline automation, lead generation platforms, and fast-turnaround websites built without the traditional dev-shop timeline or price tag.</p>
         <p>The common thread isn't any one tool — it's the approach. Find the bottleneck, build the system that removes it, ship it fast.</p>
       </div>
       <div class="credentials">
@@ -323,11 +353,14 @@
   </section>
 
   <section class="section" id="work">
-    <div class="section-label">Selected Work</div>
-    <h2>Four problems. Four AI-built solutions.</h2>
+    <div class="portfolio-header">
+      <div class="portfolio-label">Portfolio <span>04 Builds</span></div>
+      <div class="portfolio-sub">Four problems. Four AI-built solutions, deployed and working.</div>
+    </div>
     <div class="work-grid">
 
       <div class="card">
+        <div class="card-num">01 / WEB DESIGN</div>
         <div class="card-tag">Web Design</div>
         <h3>Small Business Websites</h3>
         <p class="desc">A full, professional website — built and live in days, not months — for businesses that don't have a web presence yet. No bloated CMS, no agency retainer.</p>
@@ -340,9 +373,10 @@
       </div>
 
       <div class="card">
+        <div class="card-num">02 / VOICE AI</div>
         <div class="card-tag">Voice AI</div>
         <h3>Cortana</h3>
-        <p class="desc">An AI receptionist that answers inbound calls for home service businesses, qualifies the lead, and gets contact info to the team — so no call goes to voicemail again.</p>
+        <p class="desc">An AI receptionist for home service businesses. Answers every inbound call, qualifies the lead, and routes contact info to the team — turning missed after-hours calls into booked jobs instead of lost revenue.</p>
         <div class="review">
           <div class="stars">★★★★★</div>
           <div class="review-text">"We used to miss so many calls after 5pm. Now it picks up, gets their name and number, and we call back next morning. Didn't expect it to work this well."</div>
@@ -352,6 +386,7 @@
       </div>
 
       <div class="card">
+        <div class="card-num">03 / AUTOMATION</div>
         <div class="card-tag">Automation</div>
         <h3>Orbit Flow</h3>
         <p class="desc">A referral and pipeline system for home-transaction businesses — moving concierges, loan officers, title reps — that turns scattered referrals into a trackable, followed-up-on pipeline.</p>
@@ -360,10 +395,11 @@
           <div class="review-text">"Referrals used to just live in my texts and get lost. Now I actually see who sent what and follow up on time. Closed two deals last month I probably would've dropped."</div>
           <div class="review-author">— Kevin T., Relocation Concierge</div>
         </div>
-        <a href="orbitflow.html" class="card-link">View live example →</a>
+        <a href="https://orbit-flow-console.replit.app/demo" class="card-link" target="_blank">Try the live demo →</a>
       </div>
 
       <div class="card">
+        <div class="card-num">04 / LEAD GENERATION</div>
         <div class="card-tag">Lead Generation</div>
         <h3>LexFlow</h3>
         <p class="desc">A lead generation and outreach system built for criminal defense attorneys — surfacing qualified leads daily and running the warm-outreach process automatically.</p>
@@ -372,7 +408,7 @@
           <div class="review-text">"The system actually gets me consultations, not just phone numbers. Signed three new clients off it in the first month."</div>
           <div class="review-author">— J. Alvarez, Criminal Defense Attorney</div>
         </div>
-        <a href="lexflow.html" class="card-link">View live example →</a>
+        <a href="https://glossy-meta-flow.replit.app/demo" class="card-link" target="_blank">Try the live demo →</a>
       </div>
 
     </div>
