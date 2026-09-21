@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,9 +84,9 @@
   @media (prefers-reduced-motion:reduce){
     .blob{animation:none;}
   }
- 
+
   .wrap{position:relative;z-index:1;max-width:1120px;margin:0 auto;padding:0 28px;}
- 
+
   nav{
     display:flex;justify-content:space-between;align-items:center;
     padding:28px 0;
@@ -100,7 +99,7 @@
   .nav-links{display:flex;gap:32px;font-size:0.9rem;color:var(--text-dim);}
   .nav-links a{color:var(--text-dim);text-decoration:none;transition:color 0.2s;}
   .nav-links a:hover{color:var(--text);}
- 
+
   .hero{
     min-height:78vh;
     display:flex;flex-direction:column;justify-content:center;
@@ -152,7 +151,7 @@
     backdrop-filter:blur(20px);
   }
   .btn-ghost:hover{background:rgba(255,255,255,0.09);transform:translateY(-2px);}
- 
+
   .section{padding:80px 0;}
   .section-label{
     font-size:0.8rem;color:var(--text-faint);
@@ -166,7 +165,7 @@
     letter-spacing:-0.01em;
     max-width:640px;
   }
- 
+
   .portfolio-header{
     display:flex;justify-content:space-between;align-items:flex-end;
     border-bottom:2px solid var(--glass-border);
@@ -187,13 +186,13 @@
     border:1px solid rgba(110,231,216,0.25);
   }
   .portfolio-sub{color:var(--text-dim);font-size:1rem;max-width:340px;text-align:right;}
- 
+
   .card-num{
     font-family:'Space Grotesk',sans-serif;
     font-size:0.78rem;font-weight:700;color:var(--text-faint);
     letter-spacing:0.05em;margin-bottom:18px;
   }
- 
+
   .about-grid{
     display:grid;grid-template-columns:1.1fr 0.9fr;gap:60px;
     margin-top:48px;align-items:start;
@@ -216,7 +215,7 @@
   .cred-item:last-child{border-bottom:none;}
   .cred-label{font-size:0.78rem;color:var(--text-faint);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:6px;}
   .cred-value{font-size:0.98rem;color:var(--text);font-weight:500;}
- 
+
   .work-grid{
     display:grid;
     grid-template-columns:repeat(2,1fr);
@@ -236,194 +235,4 @@
   .card:hover{transform:translateY(-4px);border-color:rgba(255,255,255,0.22);border-top-color:var(--aqua);}
   .card-tag{
     font-size:0.75rem;color:var(--aqua);
-    text-transform:uppercase;letter-spacing:0.08em;font-weight:600;
-    margin-bottom:14px;
-  }
-  .card h3{
-    font-family:'Space Grotesk',sans-serif;
-    font-size:1.7rem;font-weight:700;margin-bottom:14px;letter-spacing:-0.01em;
-  }
-  .card p.desc{
-    color:var(--text-dim);font-size:0.95rem;line-height:1.6;margin-bottom:22px;flex-grow:1;
-  }
-  .review{
-    background:rgba(0,0,0,0.22);
-    border-radius:14px;
-    padding:18px 20px;
-    margin-bottom:20px;
-  }
-  .stars{color:var(--amber);font-size:0.85rem;margin-bottom:8px;letter-spacing:2px;}
-  .review-text{font-size:0.88rem;color:#D2D5DB;line-height:1.55;font-style:italic;}
-  .review-author{font-size:0.8rem;color:var(--text-faint);margin-top:10px;}
-  .card-link{
-    font-size:0.9rem;font-weight:500;color:var(--text);
-    text-decoration:none;
-    display:inline-flex;align-items:center;gap:6px;
-  }
-  .card-link:hover{color:var(--aqua);}
- 
-  .contact-card{
-    background:linear-gradient(135deg,rgba(110,231,216,0.08),rgba(167,139,250,0.08));
-    border:1px solid var(--glass-border);
-    backdrop-filter:blur(24px);
-    border-radius:28px;
-    padding:60px;
-    text-align:center;
-    margin-top:20px;
-  }
-  .contact-card h2{max-width:none;margin:0 auto 20px;}
-  .contact-card p{color:var(--text-dim);max-width:480px;margin:0 auto 32px;font-size:1.05rem;line-height:1.6;}
-  .contact-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
- 
-  footer{
-    padding:40px 0 60px;
-    display:flex;justify-content:space-between;align-items:center;
-    border-top:1px solid var(--glass-border);
-    margin-top:40px;
-    font-size:0.85rem;color:var(--text-faint);
-    flex-wrap:wrap;gap:16px;
-  }
-  footer a{color:var(--text-dim);text-decoration:none;}
-  footer a:hover{color:var(--aqua);}
-  .footer-links{display:flex;gap:24px;}
- 
-  @media(max-width:860px){
-    .about-grid{grid-template-columns:1fr;}
-    .work-grid{grid-template-columns:1fr;}
-    .contact-card{padding:40px 24px;}
-    .nav-links{display:none;}
-  }
-</style>
-</head>
-<body>
- 
-<div class="field">
-  <div class="blob blob-a"></div>
-  <div class="blob blob-b"></div>
-  <div class="blob blob-c"></div>
-</div>
- 
-<div class="wrap">
-  <nav>
-    <div class="logo">Doxen<span>Strategy</span></div>
-    <div class="nav-links">
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
- 
-  <section class="hero">
-    <div class="eyebrow">AI Consultant | Doxen Strategy</div>
-    <h1>I staff businesses with AI agents <em>that don't sleep</em>.</h1>
-    <p class="hero-sub">Custom AI agents that answer your phones, follow up on your leads, and handle the work that slips through the cracks. I build each one around how you already operate, then run it for you every month.</p>
-    <div class="hero-cta">
-      <a href="https://signup.doxenstrategy.com/signup" class="btn btn-primary">Put an agent to work</a>
-      <a href="#work" class="btn btn-ghost">See them working</a>
-    </div>
-  </section>
- 
-  <section class="section" id="about">
-    <div class="section-label">About</div>
-    <h2>Most businesses lose more to bad handoffs than to bad marketing.</h2>
-    <div class="about-grid">
-      <div class="about-text">
-        <p><strong>Anthony Tavarez</strong> runs Doxen Strategy. The premise is simple. Most businesses don't need another piece of software to learn. They need the work done. So instead of selling tools, he builds an AI agent for one specific job in your business, sets it up around how you already operate, and keeps it running.</p>
-        <p>He came up in insurance claims, which is mostly a job about what happens when information doesn't get to the right person in time. Missed calls. Dropped handoffs. Follow-ups nobody made. The systems here come out of watching that go wrong at volume, not out of a tutorial.</p>
-        <p>Cortana, the AI receptionist, was the first. Everything else follows the same idea: one agent per job, running every month. No account manager, no six-month timeline, no software for your team to learn. The person you call is the person who built it.</p>
-      </div>
-      <div class="credentials">
-        <div class="cred-item">
-          <div class="cred-label">Education</div>
-          <div class="cred-value">B.S. Data Analytics — University of Texas at Austin</div>
-        </div>
-        <div class="cred-item">
-          <div class="cred-label">Certification</div>
-          <div class="cred-value">Professional Certificate, Data Engineering</div>
-        </div>
-        <div class="cred-item">
-          <div class="cred-label">Focus</div>
-          <div class="cred-value">Custom AI agents for business operations</div>
-        </div>
-        <div class="cred-item">
-          <div class="cred-label">Based in</div>
-          <div class="cred-value">San Antonio, Texas</div>
-        </div>
-      </div>
-    </div>
-  </section>
- 
-  <section class="section" id="work">
-    <div class="portfolio-header">
-      <div class="portfolio-label">Portfolio <span>05 Builds</span></div>
-      <div class="portfolio-sub">All live. Click any of them.</div>
-    </div>
-    <div class="work-grid">
- 
-      <div class="card">
-        <div class="card-num">01 / VOICE AI</div>
-        <h3>Cortana</h3>
-        <p class="desc">An AI receptionist for home service companies. Answers every call day or night, books the appointment on your calendar, and sends you the caller's details — turning missed after-hours calls into booked jobs instead of lost revenue.</p>
-        <a href="https://doxen-ai-voice--doxenstrategy.replit.app/demo" class="card-link" target="_blank">Try the live demo →</a>
-      </div>
- 
-      <div class="card">
-        <div class="card-num">02 / WEB DESIGN</div>
-        <h3>Small Business Websites</h3>
-        <p class="desc">A full, professional website — built and live in days, not months — for businesses that don't have a web presence yet. No bloated CMS, no agency retainer.</p>
-        <a href="https://interactive-suggestions-785375.framer.app/" class="card-link" target="_blank">View live example →</a>
-      </div>
- 
-      <div class="card">
-        <div class="card-num">03 / REAL ESTATE</div>
-        <h3>Hotsheet</h3>
-        <p class="desc">A showing follow-up agent for real estate agents — collects buyer feedback after every showing and open house, flags hot leads for callback, and writes seller-ready feedback reports.</p>
-        <a href="https://hot-lead-ai.replit.app/demo" class="card-link" target="_blank">Try the live demo →</a>
-      </div>
- 
-      <div class="card">
-        <div class="card-num">04 / AUTOMATION</div>
-        <h3>Orbit Flow</h3>
-        <p class="desc">A referral intake agent for home-transaction businesses — moving concierges, loan officers, title reps — that catches every referral and keeps each one tracked and followed up on.</p>
-        <a href="https://orbit-flow-console.replit.app/demo" class="card-link" target="_blank">Try the live demo →</a>
-      </div>
- 
-      <div class="card">
-        <div class="card-num">05 / LEAD GENERATION</div>
-        <h3>LexScope</h3>
-        <p class="desc">A lead research and outreach agent for criminal defense attorneys — surfaces qualified leads daily and runs the warm-outreach process automatically.</p>
-        <a href="https://glossy-meta-flow.replit.app/demo" class="card-link" target="_blank">Try the live demo →</a>
-      </div>
- 
-    </div>
-  </section>
- 
-  <section class="section" id="contact">
-    <div class="contact-card">
-      <h2>Have a job that keeps slipping? Put an agent on it.</h2>
-      <p>Missed calls, slow follow-ups, leads nobody works. Tell me what keeps falling through the cracks and I'll show you what an agent for it looks like.</p>
-      <div class="contact-cta">
-        <a href="https://signup.doxenstrategy.com/signup" class="btn btn-primary">Put an agent to work</a>
-        <a href="mailto:Doxenstrategy@outlook.com" class="btn btn-ghost">Doxenstrategy@outlook.com</a>
-        <a href="tel:+12108495621" class="btn btn-ghost">210-849-5621</a>
-      </div>
-    </div>
-  </section>
- 
-  <footer>
-    <div>© 2026 Doxen Strategy — Anthony Tavarez</div>
-    <div class="footer-links">
-      <a href="mailto:Doxenstrategy@outlook.com">Email</a>
-      <a href="tel:+12108495621">210-849-5621</a>
-      <a href="https://www.linkedin.com/in/doxenstrategygroup" target="_blank">LinkedIn</a>
-    </div>
-  </footer>
-</div>
- 
-</body>
-</html>
- 
-
-
-
-
+    text-transform:uppercase;letter-spacing:0.08
